@@ -2,46 +2,41 @@
   position: fixed;
   bottom: 2rem;
   right: 2rem;
-  width: 200px; /* Adjusted size to fit the cluster */
+  width: 200px;
   height: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
-  pointer-events: none; /* Allows clicks to pass through the container gaps */
+  pointer-events: none;
 }
 
 .fab-btn {
   background: none;
   border: none;
   padding: 0;
+  cursor: pointer;
   position: absolute;
   transition: transform 0.2s ease;
-
-  /* CRITICAL: Disable events on the rectangular SVG container */
   pointer-events: none;
 }
 
-/* Remove the old img rule as we aren't using img tags anymore */
-/* .fab-btn img { ... } */
+.fab-btn path,
+.fab-btn circle,
+.fab-btn rect,
+.fab-btn polygon,
+.fab-btn g {
+  pointer-events: auto;
+}
 
-/* Central Button Styling */
 .fab-center {
   width: 75px;
   height: 75px;
   z-index: 10;
   border-radius: 50%;
   background-color: #0be3bf;
-
-  /* Re-enable events for the center circle button */
   pointer-events: auto;
-  cursor: pointer;
 }
 
-.fab-center:hover {
-  transform: scale(1.1);
-}
-
-/* Sliver Button Styling */
 .fab-sliver {
   width: 100%;
   height: 100%;
@@ -50,12 +45,6 @@
   left: 0;
 }
 
-/* NEW RULE: Re-enable events ONLY on the shapes inside the SVG */
-.fab-sliver path,
-.fab-sliver circle,
-.fab-sliver rect,
-.fab-sliver polygon,
-.fab-sliver g {
-  pointer-events: auto; /* Clicks work on the shape */
-  cursor: pointer; /* Hand cursor shows only on the shape */
+.fab-btn:hover {
+  transform: scale(1.1);
 }

@@ -26,7 +26,7 @@ const FloatingActionButton = () => {
   return (
     <div className="fab-container">
       {/* Central Circular Button */}
-      <button className="fab-btn fab-center" onClick={handleHomeClick}></button>
+      <div className="fab-btn fab-center" onClick={handleHomeClick}></div>
 
       {/* Surrounding Sliver Buttons */}
       <ArtIcon
