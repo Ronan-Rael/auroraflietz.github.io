@@ -1,5 +1,6 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
+import FloatingActionButton from "./components/FloatingActionButton";
 
 function App() {
   return (
@@ -18,6 +19,9 @@ function App() {
           Learn React
         </a>
       </header>
+      <FloatingActionButton onClick={() => alert("FAB clicked!")}>
+        +
+      </FloatingActionButton>
     </div>
   );
 }
