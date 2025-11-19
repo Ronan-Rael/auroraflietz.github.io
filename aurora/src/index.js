@@ -6,6 +6,7 @@ import About from './About';
 import Drawings from './Drawings';
 import Home from './Home';
 import reportWebVitals from './reportWebVitals';
+import "./fonts/BOMBARD_.ttf";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
