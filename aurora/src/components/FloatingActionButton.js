@@ -2,6 +2,7 @@ import React from "react";
 import "./FloatingActionButton.css";
 
 // Import SVGs as React Components
+import { ReactComponent as HomeIcon } from "../assets/fab-home.svg";
 import { ReactComponent as ArtIcon } from "../assets/fab-art.svg";
 import { ReactComponent as AboutIcon } from "../assets/fab-about.svg";
 import { ReactComponent as CadIcon } from "../assets/fab-cad.svg";
@@ -26,7 +27,7 @@ const FloatingActionButton = () => {
   return (
     <div className="fab-container">
       {/* Central Circular Button */}
-      <div className="fab-btn fab-center" onClick={handleHomeClick}></div>
+      <HomeIcon className="fab-btn fab-center" onClick={handleHomeClick} />
 
       {/* Surrounding Sliver Buttons */}
       <ArtIcon
