@@ -3,6 +3,7 @@
     src: local('Bombard'), url("./fonts/BOMBARD_.ttf") format('truetype');
 }
 /* NOTICE::: FROM HERE DOWN TO THE LAST 2 STYLE FORMS, ITS THE EXACT SAME AS DRAWINGS.CSS
+BECAUSE OF THAT, MODELS.JS DRAWS FROM DRAWINGS.CSS BEFORE MODELS.CSS
 IF WE WANT TO MAKE CHANGES TO THIS PAGE THEN SURE, OTHERWISE DELETE EVERYTHING FROM HERE TO LINE 65 */
 /* Ripped from Home.css */
 .content{
@@ -14,6 +15,9 @@ IF WE WANT TO MAKE CHANGES TO THIS PAGE THEN SURE, OTHERWISE DELETE EVERYTHING F
     left: 0%;
     width:100%;
     min-height: 100%;
+
+
+    overflow:auto; /* literally only here to let the page be scrollable */
 }
 
 /* Cool top bar for the page */
@@ -62,6 +66,7 @@ IF WE WANT TO MAKE CHANGES TO THIS PAGE THEN SURE, OTHERWISE DELETE EVERYTHING F
     gap: 10px 10px;
     width: 90%;
     min-height:52%;
+    margin-bottom:3%; /* leave a little room for santa */
 }
 .moditemBox1{
     margin:0% 0.5%;
