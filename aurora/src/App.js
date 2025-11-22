@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import "./About.css";
 import FloatingActionButton from "./components/FloatingActionButton";
 
 function App() {
