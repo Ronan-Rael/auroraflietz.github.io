@@ -2,6 +2,7 @@ import './Drawings.css'
 import { useState } from "react"
 import { Link, useLoaderData } from "react-router-dom";
 import "./fonts/BOMBARD_.ttf";
+import FloatingActionButton from "./components/FloatingActionButton";
 
 export default function Drawings() {
     /* Brief rundown of the structure here since comments cant be in a return:
@@ -10,6 +11,7 @@ export default function Drawings() {
     scrollable(?): if decide to keep topBar at top, this will hold scrollable material
     textPortion: holds the top portion of text before the actually cool content*/
     return (
+        <>
         <div className="content">
             <div className="top">
                 <svg className="topBar" viewBox='0 0 100 100' preserveAspectRatio='none'>
@@ -42,5 +44,8 @@ export default function Drawings() {
                 <div className="itemBox1"></div>
             </div>
         </div>
+        {/* Floating Action Button */}
+        <FloatingActionButton />
+        </>
     )
 }
