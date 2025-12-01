@@ -1,3 +1,9 @@
+# TO BUILD:
+cd into aurora  (this is where the magic happens)
+npm i           (install npm dependencies and functions)
+npm run build   (build the project)
+npm run start   (site is now up and running)
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

@@ -4,6 +4,7 @@ import './index.css';
 import Models from './Models';
 import About from './About';
 import Drawings from './Drawings';
+import Item from './Item';
 import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import "./fonts/BOMBARD_.ttf";
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/models",
     element: <Models/>
+  },
+  {
+    path: "/item",
+    element: <Item/>
   }
 ]);
 
