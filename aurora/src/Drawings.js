@@ -150,32 +150,56 @@ export default function Drawings() {
             <div className="items">
                 {/* Items are currently just colored boxes, will make them fancy and functional once we've got images */}
                 <div className="itemColumn">
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 5",image:image1}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 1",image:image1}})}>
                         <img src={image1}/>
                         <div className="itemDescription">Description</div>
-                    </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 6",image:image2}})}>
-                        <img src={image2}/>
-                        <div className="itemDescription">Description</div>
-                    </div>
-                </div>
-                <div className="itemColumnMid" >
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 3",image:image3}})}>
-                        <img src={image3}/>
-                        <div className="itemDescription">This one serves to test different image sizes. I wanted to keep the cool indenting, but couldn't get it to work dynamically.</div>
                     </div>
                     <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 4",image:image4}})}>
                         <img src={image4}/>
                         <div className="itemDescription">Description</div>
                     </div>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 7",image:image7}})}>
+                        <img src={image7}/>
+                        <div className="itemDescription">Description</div>
+                    </div>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 10",image:image10}})}>
+                        <img src={image10}/>
+                        <div className="itemDescription">Description</div>
+                    </div>
                 </div>
-                <div className="itemColumn">
+                <div className="itemColumnMid" >
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 2",image:image2}})}>
+                        <img src={image2}/>
+                        <div className="itemDescription">This one serves to test different image sizes. I wanted to keep the cool indenting, but couldn't get it to work dynamically.</div>
+                    </div>
                     <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 5",image:image5}})}>
                         <img src={image5}/>
                         <div className="itemDescription">Description</div>
                     </div>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 8",image:image8}})}>
+                        <img src={image8}/>
+                        <div className="itemDescription">Description</div>
+                    </div>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 11",image:image11}})}>
+                        <img src={image11}/>
+                        <div className="itemDescription">Description</div>
+                    </div>
+                </div>
+                <div className="itemColumn">
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 3",image:image3}})}>
+                        <img src={image3}/>
+                        <div className="itemDescription">Description</div>
+                    </div>
                     <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 6",image:image6}})}>
                         <img src={image6}/>
+                        <div className="itemDescription">Description</div>
+                    </div>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 9",image:image9}})}>
+                        <img src={image9}/>
+                        <div className="itemDescription">Description</div>
+                    </div>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 12",image:image12}})}>
+                        <img src={image12}/>
                         <div className="itemDescription">Description</div>
                     </div>
                 </div>
