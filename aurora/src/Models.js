@@ -2,11 +2,13 @@ import './Drawings.css'
 import { useState } from "react"
 import {Link, useLoaderData} from "react-router-dom";
 import "./fonts/BOMBARD_.ttf";
+import { useNavigate } from "react-router-dom";
 import FloatingActionButton from "./components/FloatingActionButton";
-import image1 from "./assets/tempModel1.png";
+import image1 from "./assets/models/WBdolphinRENDER.png";
 import image2 from "./assets/tempModel2.png";
 
 export default function Models(){
+    const navigate = useNavigate();
     return(
         <>
         {/* Wrapper class */}
@@ -43,19 +45,15 @@ export default function Models(){
             <div className="items">
                 {/* Items are currently just colored boxes, will make them fancy and functional once we've got images */}
                 <div className="itemColumn">
-                    <div className="itemBox1">
+                    <div className="itemBox1" onClick={()=>navigate("/itemMod",{state:{item:"Dolphin",model:"https://p3d.in/PZ7tt"}})}>
                         <img src={image1}/>
-                        <div className="itemDescription">This page is pretty much the same as the Drawings page</div>
-                    </div>
-                    <div className="itemBox1">
-                        <img src={image1}/>
-                        <div className="itemDescription">Description</div>
+                        <div className="itemDescription">Dolphin Model</div>
                     </div>
                 </div>
                 <div className="itemColumnMid" >
                     <div className="itemBox1">
                         <img src={image2}/>
-                        <div className="itemDescription">Used different drawings, so we can see the images scaling to fit the box width to keep it looking nice</div>
+                        <div className="itemDescription">Title</div>
                     </div>
                     <div className="itemBox1">
                         <img src={image2}/>
@@ -63,10 +61,6 @@ export default function Models(){
                     </div>
                 </div>
                 <div className="itemColumn">
-                    <div className="itemBox1">
-                        <img src={image1}/>
-                        <div className="itemDescription">Description</div>
-                    </div>
                     <div className="itemBox1">
                         <img src={image1}/>
                         <div className="itemDescription">Description</div>
