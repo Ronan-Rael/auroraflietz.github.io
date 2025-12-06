@@ -7,7 +7,6 @@ import FloatingActionButton from "./components/FloatingActionButton";
 import { useNavigate } from "react-router-dom";
 import image1 from "./assets/tempDraw1.jpg";
 import image2 from "./assets/tempDraw2.jpg";
-import '@google/model-viewer';
 
 export default function Item() {
     const { state } = useLocation();
