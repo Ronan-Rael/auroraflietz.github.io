@@ -94,6 +94,9 @@ export default function Drawings() {
                 <div className="label-text-overlay" style={{left: '30%',color:'white'}}>
                     MODELS
                 </div>
+                <div className="label-text-overlay" style={{left: '85%',color:'white',fontSize:'64px'}}>
+                    AURORA
+                </div>
             </div>
             {/* Header and sub header that appear before items */}
             <div className="text">
@@ -114,9 +117,9 @@ export default function Drawings() {
                         <img src={image4}/>
                         <div className="itemDescription">Augment your Reality</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 7",image:image7}})}>
-                        <img src={image7}/>
-                        <div className="itemDescription">Description</div>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Wide Frog",desc:"One of my frog fight TCG card art commisions",image:image13}})}>
+                        <img src={image13}/>
+                        <div className="itemDescription">Wide Frog</div>
                     </div>
                     <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Sun Frog",desc:"One of my frog fight TCG card art commissions",image:image10}})}>
                         <img src={image10}/>
@@ -128,9 +131,9 @@ export default function Drawings() {
                         <img src={image2}/>
                         <div className="itemDescription">Jack of Clubs Design</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 5",image:image5}})}>
-                        <img src={image5}/>
-                        <div className="itemDescription">Description</div>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Clumsy Frog",desc:"One of my frog fight TCG card art commisions",image:image14}})}>
+                        <img src={image14}/>
+                        <div className="itemDescription">Clumsy Frog</div>
                     </div>
                     <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Null Frog",desc:"One of my frog fight TCG card art commissions",image:image8}})}>
                         <img src={image8}/>
@@ -146,9 +149,9 @@ export default function Drawings() {
                         <img src={image3}/>
                         <div className="itemDescription">Ace of Diamonds Design</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 6",image:image6}})}>
-                        <img src={image6}/>
-                        <div className="itemDescription">Description</div>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Coffee Frog",desc:"One of my forg fight TCG card art commissions",image:image15}})}>
+                        <img src={image15}/>
+                        <div className="itemDescription">Coffee Frog</div>
                     </div>
                     <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Eldritch Frog",desc:"One of my frog fight TCG card art commissions",image:image9}})}>
                         <img src={image9}/>

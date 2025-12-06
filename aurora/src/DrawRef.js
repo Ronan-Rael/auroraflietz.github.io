@@ -6,6 +6,8 @@ import "./fonts/BOMBARD_.ttf";
 import FloatingActionButton from "./components/FloatingActionButton";
 import images from "./imageLoader.js";
 
+// THIS FUNCTION IS NOT BEING USED AT ALL RN
+
 export default function DrawRef(){
     // > content wrapper class
     const content = document.createElement("div");

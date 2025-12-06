@@ -45,12 +45,15 @@ export default function Item() {
                     </div>
                 </div>
                 {/* Header and sub header that appear before items */}
-                <div className="text">
-                    {/* Header */}
-                    <text className="headingText">{location.state.item}</text>
-                    <iframe allowfullscreen width="500vw" height="500vh" loading="lazy" frameborder="0" src="https://p3d.in/e/PZ7tt"></iframe>
-                    {/* Sub-Header (seperate lines cause it was being a nuisance) */}
-                    <text className='subHeadingText'>WOAH! It's a drawing!</text>
+                <div className="doubleColumn">
+                    <div className="text">
+                        {/* Header */}
+                        <text className="headingText">{location.state.item}</text>
+                        {/* Sub-Header (seperate lines cause it was being a nuisance) */}
+                        <text className='subHeadingText' style={{color:'gray', paddingBottom:'1%'}}>Model creation date</text>
+                        <text className='subHeadingText'></text> {/* this is where a description would go */}
+                    </div>
+                    <iframe allowfullscreen width="50%" height="100%" loading="lazy" frameborder="0" src="https://p3d.in/e/PZ7tt"></iframe>
                 </div>
             </div>
             {/* Floating Action Button */}
@@ -89,14 +92,20 @@ export default function Item() {
                     <div className="label-text-overlay" style={{left: '50%',textDecoration:'underline'}}>
                         ITEM
                     </div>
+                    <div className="label-text-overlay" style={{left: '85%',color:'white',fontSize:'64px'}}>
+                        AURORA
+                    </div>
                 </div>
                 {/* Header and sub header that appear before items */}
-                <div className="text">
-                    {/* Header */}
-                    <text className="headingText">{location.state.item}</text>
+                <div className="doubleColumn">
+                    <div className="text">
+                        {/* Header */}
+                        <text className="headingText">{location.state.item}</text>
+                        {/* Sub-Header (seperate lines cause it was being a nuisance) */}
+                        <text className='subHeadingText' style={{color:'gray', paddingBottom:'1%'}}>Model creation date</text>
+                        <text className='subHeadingText'></text> {/* this is where a description would go */}
+                    </div>
                     <model-viewer alt="Castle 3d model" src={location.state.model} shadow-intensity="1" camera-controls></model-viewer>
-                    {/* Sub-Header (seperate lines cause it was being a nuisance) */}
-                    <text className='subHeadingText'>WOAH! It's a drawing!</text>
                 </div>
             </div>
             {/* Floating Action Button */}

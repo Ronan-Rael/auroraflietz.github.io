@@ -66,6 +66,15 @@
   pointer-events: none;
 }
 
+.doubleColumn{
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
 model-viewer{
     width: 50vw;
     height: 50vh;

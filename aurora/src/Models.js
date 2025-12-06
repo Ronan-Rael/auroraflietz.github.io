@@ -40,6 +40,9 @@ export default function Models(){
                 <div className="label-text-overlay" style={{left: '30%', textDecoration: 'underline'}}>
                     MODELS
                 </div>
+                <div className="label-text-overlay" style={{left: '85%',color:'white',fontSize:'64px'}}>
+                    AURORA
+                </div>
             </div>
             {/* Header and sub header that appear before items */}
             <div className="text">

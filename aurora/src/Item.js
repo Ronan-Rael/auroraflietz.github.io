@@ -40,14 +40,20 @@ export default function Item() {
                 <div className="label-text-overlay" style={{left: '50%',textDecoration:'underline'}}>
                     ITEM
                 </div>
+                <div className="label-text-overlay" style={{left: '85%',color:'white',fontSize:'64px'}}>
+                    AURORA
+                </div>
             </div>
             {/* Header and sub header that appear before items */}
-            <div className="text">
-                {/* Header */}
-                <text className="headingText">{location.state.item}</text>
-                <img id="itemscrn" src={location.state.image}/>
-                {/* Sub-Header (seperate lines cause it was being a nuisance) */}
-                <text className='subHeadingText'>{location.state.desc}</text>
+            <div className="doubleColumn">
+                <div className="text">
+                    {/* Header */}
+                    <text className="headingText">{location.state.item}</text>
+                    {/* Sub-Header (seperate lines cause it was being a nuisance) */}
+                    <text className='subHeadingText' style={{color:'gray', paddingBottom:'1%'}}>Model creation date</text>
+                    <text className='subHeadingText'>{location.state.desc}</text>
+                </div>
+                <img id="itemscrn" style={{maxHeight:'90vh'}} src={location.state.image}/>
             </div>
         </div>
         {/* Floating Action Button */}
