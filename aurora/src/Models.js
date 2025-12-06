@@ -5,6 +5,8 @@ import "./fonts/BOMBARD_.ttf";
 import { useNavigate } from "react-router-dom";
 import FloatingActionButton from "./components/FloatingActionButton";
 import image1 from "./assets/models/WBdolphinRENDER.png";
+import image2 from "./assets/models/Dx3castleRENDER.png";
+import image3 from "./assets/models/DnDTravelingCartRENDER.png";
 import model2 from "./assets/models/DeX3castle.gltf"
 import model3 from "./assets/models/Dnd_Traveling_Cart.gltf"
 
@@ -15,7 +17,7 @@ export default function Models(){
         {/* Wrapper class */}
         <div className="content">
             {/* Creates a cool design for the top of the page */}
-            <div className="top">
+            <div className="top" style={{ position: "relative" }}>
                 <svg className="topBar" viewBox='0 0 100 100' preserveAspectRatio='none'>
                     {/* Left bar */}
                     <path d="M   0   0
@@ -32,15 +34,19 @@ export default function Models(){
                     Z"
                     fill="#0BE3BF" />
                 </svg>
+                <div className="label-text-overlay" style={{left: '10%',color:'white'}}>
+                    DRAWINGS
+                </div>
+                <div className="label-text-overlay" style={{left: '30%', textDecoration: 'underline'}}>
+                    MODELS
+                </div>
             </div>
             {/* Header and sub header that appear before items */}
             <div className="text">
                 {/* Header */}
-                <text className="headingText">CAD Page Description</text>
+                <text className="headingText">CAD Models Gallery</text>
                 {/* Sub-Header (seperate lines cause it was being a nuisance) */}
-                <text className='subHeadingText'>We straight gassin', cuttin' straight to the bricks, haha</text>
-                <text className='subHeadingText'>This shit ain't nothin' to me, man</text>
-                <text className='subHeadingText'>We smokin' runtz</text>
+                <text className='subHeadingText'>An archive of my 3d models</text>
             </div>
             {/* Models wrapper class; holds all the model images and links to their pages */}
             <div className="items">
@@ -52,14 +58,14 @@ export default function Models(){
                     </div>
                 </div>
                 <div className="itemColumnMid" >
-                    <div className="itemBox1" onClick={()=>navigate("/itemMod",{state:{type:"file",item:"DeX3 Castle",model:model2}})}>
-                        <img src={image1}/>
-                        <div className="itemDescription">DeX3 Castle</div>
+                    <div className="itemBox1" onClick={()=>navigate("/itemMod",{state:{type:"file",item:"DX3 Castle",model:model2}})}>
+                        <img src={image2}/>
+                        <div className="itemDescription">DX3 Castle</div>
                     </div>
                 </div>
                 <div className="itemColumn">
                     <div className="itemBox1" onClick={()=>navigate("/itemMod",{state:{type:"file",item:"Dnd Traveling Cart",model:model3}})}>
-                        <img src={image1}/>
+                        <img src={image3}/>
                         <div className="itemDescription">Dnd Traveling Cart</div>
                     </div>
                 </div>

@@ -23,7 +23,6 @@
     height: 8%;
 }
 .topBar{
-    display: flex;
     width: 100%;
     height: 100%;
 }
@@ -58,7 +57,7 @@
     display: flex;
     flex-flow: row wrap;
     justify-content:space-evenly;
-    width: 90%;
+    width: 100%;
     min-height:52%;
     margin-bottom:3%; /* leave a little room for santa */
 }
@@ -108,4 +107,13 @@ img{width:100%;}
     width:98%;
     padding: 1%;
     align-self:flex-end;
+}
+
+.label-text-overlay {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: black;
+  pointer-events: none;
 }

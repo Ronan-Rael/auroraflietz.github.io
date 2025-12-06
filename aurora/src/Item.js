@@ -14,7 +14,7 @@ export default function Item() {
         {/* Wrapper class */}
         <div className="content">
             {/* Creates a cool design for the top of the page */}
-            <div className="top">
+            <div className="top" style={{ position: "relative" }}>
                 <svg className="topBar" viewBox='0 0 100 100' preserveAspectRatio='none'>
                     {/* Left bar */}
                     <path d="M   0   0
@@ -31,6 +31,15 @@ export default function Item() {
                     Z"
                     fill="#0BE3BF" />
                 </svg>
+                <div className="label-text-overlay" style={{left: '10%', color:'white'}}>
+                    DRAWINGS
+                </div>
+                <div className="label-text-overlay" style={{left: '30%',color:'white'}}>
+                    MODELS
+                </div>
+                <div className="label-text-overlay" style={{left: '50%',textDecoration:'underline'}}>
+                    ITEM
+                </div>
             </div>
             {/* Header and sub header that appear before items */}
             <div className="text">

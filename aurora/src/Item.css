@@ -57,6 +57,15 @@
     width:50%;
 }
 
+.label-text-overlay {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: black;
+  pointer-events: none;
+}
+
 model-viewer{
     width: 50vw;
     height: 50vh;
