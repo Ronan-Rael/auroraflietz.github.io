@@ -2,14 +2,18 @@ import React from "react";
 import { Link } from "react-router-dom";
 import "./About.css";
 import profileImg from "./assets/profile.jpg";
+
+// SVG icons (same as FAB)
+import { ReactComponent as HomeIcon } from "./assets/home_icon.svg";
+import { ReactComponent as ArtIcon } from "./assets/art_icon.svg";
+import { ReactComponent as CadIcon } from "./assets/cad_icon.svg";
+
 import FloatingActionButton from "./components/FloatingActionButton";
 
 const About = () => {
   return (
     <>
       <div className="wrap">
-        
-        {/* LEFT SIDE */}
         <div className="left-column">
           <div className="profile-pic">
             <img
@@ -20,37 +24,33 @@ const About = () => {
           </div>
 
           <div className="nav-circles">
-            <Link to="/models" className="circle">
-              <i className="fas fa-cube"></i>
-              CAD
+            <Link to="/" className="circle">
+              <HomeIcon className="circle-icon" />
+              Home
             </Link>
 
             <Link to="/drawings" className="circle">
-              <i className="fas fa-paint-brush"></i>
+              <ArtIcon className="circle-icon" />
               Digital <br /> Art
             </Link>
 
-            <Link to="/" className="circle">
-              <i className="fas fa-home"></i>
-              Home
+            <Link to="/models" className="circle">
+              <CadIcon className="circle-icon" />
+              CAD
             </Link>
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
         <div className="right-column">
           <div className="buttons-and-about">
             <div className="about-section">
-              <h1>About Page </h1>
-
+              <h1>About</h1>
               <p>
-                Hello! I am Aurora Drew Fleitz! I'm a Digital artist, graphic designer, 3d modeler, and occasional animator based in Michigan. I've done work for up and coming trading card games, and various commissions! I was born and raised in Colorado.
-                I have experience in Procreate, Blender, Illustrator, Photoshop, Solidworks, AutoCAD, Blockbench, and GIMP.
+                Hello! I am Aurora Drew Fleitz! I'm a Digital artist, graphic designer, 3D modeler, and occasional animator based in Michigan. I've done work for up-and-coming trading card games and various commissions. I was born and raised in Colorado. I have experience in Procreate, Blender, Illustrator, Photoshop, Solidworks, AutoCAD, Blockbench, and GIMP.
               </p>
-
               <p>
                 <strong>Contact</strong><br/>
-                Email: <a href="mailto:Dfleitz12@gmail.com">Dfleitz12@gmail.com</a><br/>
+                Email: <a href="mailto:Dfleitz12@gmail.com">Dfleitz12@gmail.com</a>
               </p>
             </div>
           </div>
