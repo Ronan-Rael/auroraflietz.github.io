@@ -40,7 +40,7 @@ export default function Item() {
                 <text className="headingText">{location.state.item}</text>
                 <img id="itemscrn" src={location.state.image}/>
                 {/* Sub-Header (seperate lines cause it was being a nuisance) */}
-                <text className='subHeadingText'>WOAH! It's a drawing!</text>
+                <text className='subHeadingText'>{location.state.desc}</text>
             </div>
         </div>
         {/* Floating Action Button */}

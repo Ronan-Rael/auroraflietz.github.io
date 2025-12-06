@@ -66,54 +66,6 @@ import image58 from "./assets/golden age/IMG_0306.JPG";
 
 export default function Drawings() {
     const navigate = useNavigate();
-
-    // drawings stuff
-    const column1 = document.createElement("div");
-    column1.className = "itemColumn";
-    const column2 = document.createElement("div");
-    column2.className = "itemColumnMid";
-    const column3 = document.createElement("div");
-    column3.className = "itemColumnMid";
-
-    let imgList = [];
-
-    {images.map((image, index) =>(
-        imgList[index] = image
-    ))}
-
-    let num = 0;
-    for (const img of imgList){
-        const itemBox = document.createElement("div");
-        itemBox.className="itemBox1";
-
-        const image = document.createElement("img");
-        image.src = img;
-        image.alt = "drawing";
-        itemBox.appendChild(image);
-
-        const desc = document.createElement("div");
-        desc.className = "itemDescription";
-        desc.textContent = "description";
-        itemBox.appendChild(desc);
-
-        switch(num){
-            case 0:
-                column1.appendChild(itemBox);
-                num = 1;
-                break;
-            case 1:
-                column2.appendChild(itemBox);
-                num = 2;
-                break;
-            case 2:
-                column3.appendChild(itemBox);
-                num = 0;
-                break;
-            default:
-                break;
-        }
-    }
-
     return (
         <>
         {/* Wrapper class */}
@@ -140,67 +92,65 @@ export default function Drawings() {
             {/* Header and sub header that appear before items */}
             <div className="text">
                 {/* Header */}
-                <text className="headingText">Drawing Page Description</text>
+                <text className="headingText">Drawing Gallery</text>
                 {/* Sub-Header (seperate lines cause it was being a nuisance) */}
-                <text className='subHeadingText'>Can you remind me who I am?</text>
-                <text className='subHeadingText'>Get the president on the phone now</text>
-                <text className='subHeadingText'>I fronted him a brick, I need my money</text>
+                <text className='subHeadingText'>An archive of all my past art pieces</text>
             </div>
             {/* Drawings wrapper class; holds all the drawings and links to their pages */}
             <div className="items">
                 {/* Items are currently just colored boxes, will make them fancy and functional once we've got images */}
                 <div className="itemColumn">
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 1",image:image1}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Queen of Spades Design",desc:"part of my custom cards project",image:image1}})}>
                         <img src={image1}/>
-                        <div className="itemDescription">Description</div>
+                        <div className="itemDescription">Queen of Spades Design</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 4",image:image4}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Augment your Reality",desc:"",image:image4}})}>
                         <img src={image4}/>
-                        <div className="itemDescription">Description</div>
+                        <div className="itemDescription">Augment your Reality</div>
                     </div>
                     <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 7",image:image7}})}>
                         <img src={image7}/>
                         <div className="itemDescription">Description</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 10",image:image10}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Sun Frog",desc:"One of my frog fight TCG card art commissions",image:image10}})}>
                         <img src={image10}/>
-                        <div className="itemDescription">Description</div>
+                        <div className="itemDescription">Sun Frog</div>
                     </div>
                 </div>
                 <div className="itemColumnMid" >
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 2",image:image2}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Jack of Clubs Design",desc:"part of my custom cards project",image:image2}})}>
                         <img src={image2}/>
-                        <div className="itemDescription">This one serves to test different image sizes. I wanted to keep the cool indenting, but couldn't get it to work dynamically.</div>
+                        <div className="itemDescription">Jack of Clubs Design</div>
                     </div>
                     <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 5",image:image5}})}>
                         <img src={image5}/>
                         <div className="itemDescription">Description</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 8",image:image8}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Null Frog",desc:"One of my frog fight TCG card art commissions",image:image8}})}>
                         <img src={image8}/>
-                        <div className="itemDescription">Description</div>
+                        <div className="itemDescription">Null Frog</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 11",image:image11}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Moon Frog",desc:"One of my frog fight TCG card art commissions",image:image11}})}>
                         <img src={image11}/>
-                        <div className="itemDescription">Description</div>
+                        <div className="itemDescription">Moon Frog</div>
                     </div>
                 </div>
                 <div className="itemColumn">
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 3",image:image3}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Ace of Diamonds Design",desc:"part of my custom cards project",image:image3}})}>
                         <img src={image3}/>
-                        <div className="itemDescription">Description</div>
+                        <div className="itemDescription">Ace of Diamonds Design</div>
                     </div>
                     <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 6",image:image6}})}>
                         <img src={image6}/>
                         <div className="itemDescription">Description</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 9",image:image9}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Eldritch Frog",desc:"One of my frog fight TCG card art commissions",image:image9}})}>
                         <img src={image9}/>
-                        <div className="itemDescription">Description</div>
+                        <div className="itemDescription">Eldritch Frog</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Drawing 12",image:image12}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Rainbow Frog",desc:"One of my frog fight TCG card art commissions",image:image12}})}>
                         <img src={image12}/>
-                        <div className="itemDescription">Description</div>
+                        <div className="itemDescription">Rainbow Frog</div>
                     </div>
                 </div>
             </div>

@@ -60,4 +60,51 @@ export default function DrawRef(){
     content.appendChild(text)
 
     // >> item section
+
+    // drawings stuff
+        const column1 = document.createElement("div");
+        column1.className = "itemColumn";
+        const column2 = document.createElement("div");
+        column2.className = "itemColumnMid";
+        const column3 = document.createElement("div");
+        column3.className = "itemColumnMid";
+    
+        let imgList = [];
+    
+        {images.map((image, index) =>(
+            imgList[index] = image
+        ))}
+    
+        let num = 0;
+        for (const img of imgList){
+            const itemBox = document.createElement("div");
+            itemBox.className="itemBox1";
+    
+            const image = document.createElement("img");
+            image.src = img;
+            image.alt = "drawing";
+            itemBox.appendChild(image);
+    
+            const desc = document.createElement("div");
+            desc.className = "itemDescription";
+            desc.textContent = "description";
+            itemBox.appendChild(desc);
+    
+            switch(num){
+                case 0:
+                    column1.appendChild(itemBox);
+                    num = 1;
+                    break;
+                case 1:
+                    column2.appendChild(itemBox);
+                    num = 2;
+                    break;
+                case 2:
+                    column3.appendChild(itemBox);
+                    num = 0;
+                    break;
+                default:
+                    break;
+            }
+        }
 }
