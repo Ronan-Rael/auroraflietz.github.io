@@ -5,8 +5,6 @@ import { Link, Navigate, useLoaderData } from "react-router-dom";
 import "./fonts/BOMBARD_.ttf";
 import FloatingActionButton from "./components/FloatingActionButton";
 import { useNavigate } from "react-router-dom";
-import image1 from "./assets/tempDraw1.jpg";
-import image2 from "./assets/tempDraw2.jpg";
 
 export default function Item() {
     const { state } = useLocation();

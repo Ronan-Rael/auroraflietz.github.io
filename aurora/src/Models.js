@@ -5,7 +5,6 @@ import "./fonts/BOMBARD_.ttf";
 import { useNavigate } from "react-router-dom";
 import FloatingActionButton from "./components/FloatingActionButton";
 import image1 from "./assets/models/WBdolphinRENDER.png";
-import image2 from "./assets/tempModel2.png";
 
 export default function Models(){
     const navigate = useNavigate();
