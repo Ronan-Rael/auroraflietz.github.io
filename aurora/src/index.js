@@ -5,6 +5,7 @@ import Models from './Models';
 import About from './About';
 import Drawings from './Drawings';
 import Item from './Item';
+import ItemMod from './ItemMod';
 import Home from './Home';
 import reportWebVitals from './reportWebVitals';
 import "./fonts/BOMBARD_.ttf";
@@ -30,6 +31,10 @@ const router = createBrowserRouter([
   {
     path: "/item",
     element: <Item/>
+  },
+  {
+    path: "/itemMod",
+    element: <ItemMod/>
   }
 ]);
 

@@ -5,8 +5,6 @@ import { Link, Navigate, useLoaderData } from "react-router-dom";
 import "./fonts/BOMBARD_.ttf";
 import FloatingActionButton from "./components/FloatingActionButton";
 import { useNavigate } from "react-router-dom";
-import image1 from "./assets/tempDraw1.jpg";
-import image2 from "./assets/tempDraw2.jpg";
 
 export default function Item() {
     const { state } = useLocation();
@@ -40,7 +38,7 @@ export default function Item() {
                 <text className="headingText">{location.state.item}</text>
                 <img id="itemscrn" src={location.state.image}/>
                 {/* Sub-Header (seperate lines cause it was being a nuisance) */}
-                <text className='subHeadingText'>WOAH! It's a drawing!</text>
+                <text className='subHeadingText'>{location.state.desc}</text>
             </div>
         </div>
         {/* Floating Action Button */}
