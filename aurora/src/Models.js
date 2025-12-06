@@ -5,6 +5,8 @@ import "./fonts/BOMBARD_.ttf";
 import { useNavigate } from "react-router-dom";
 import FloatingActionButton from "./components/FloatingActionButton";
 import image1 from "./assets/models/WBdolphinRENDER.png";
+import model2 from "./assets/models/DeX3castle.gltf"
+import model3 from "./assets/models/Dnd_Traveling_Cart.gltf"
 
 export default function Models(){
     const navigate = useNavigate();
@@ -44,21 +46,21 @@ export default function Models(){
             <div className="items">
                 {/* Items are currently just colored boxes, will make them fancy and functional once we've got images */}
                 <div className="itemColumn">
-                    <div className="itemBox1" onClick={()=>navigate("/itemMod",{state:{item:"Dolphin",model:"https://p3d.in/PZ7tt"}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/itemMod",{state:{type:"site",item:"White Beaked Dolphin",model:"https://p3d.in/PZ7tt"}})}>
                         <img src={image1}/>
-                        <div className="itemDescription">Dolphin Model</div>
+                        <div className="itemDescription">White Beaked Dolphin</div>
                     </div>
                 </div>
                 <div className="itemColumnMid" >
-                    <div className="itemBox1" onClick={()=>navigate("/itemMod",{state:{item:"Dolphin",model:"https://p3d.in/PZ7tt"}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/itemMod",{state:{type:"file",item:"DeX3 Castle",model:model2}})}>
                         <img src={image1}/>
-                        <div className="itemDescription">Dolphin Model</div>
+                        <div className="itemDescription">DeX3 Castle</div>
                     </div>
                 </div>
                 <div className="itemColumn">
-                    <div className="itemBox1" onClick={()=>navigate("/itemMod",{state:{item:"Dolphin",model:"https://p3d.in/PZ7tt"}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/itemMod",{state:{type:"file",item:"Dnd Traveling Cart",model:model3}})}>
                         <img src={image1}/>
-                        <div className="itemDescription">Dolphin Model</div>
+                        <div className="itemDescription">Dnd Traveling Cart</div>
                     </div>
                 </div>
             </div>
