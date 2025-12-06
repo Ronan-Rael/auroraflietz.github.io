@@ -51,19 +51,15 @@ export default function Models(){
                     </div>
                 </div>
                 <div className="itemColumnMid" >
-                    <div className="itemBox1">
-                        <img src={image2}/>
-                        <div className="itemDescription">Title</div>
-                    </div>
-                    <div className="itemBox1">
-                        <img src={image2}/>
-                        <div className="itemDescription">Description</div>
+                    <div className="itemBox1" onClick={()=>navigate("/itemMod",{state:{item:"Dolphin",model:"https://p3d.in/PZ7tt"}})}>
+                        <img src={image1}/>
+                        <div className="itemDescription">Dolphin Model</div>
                     </div>
                 </div>
                 <div className="itemColumn">
-                    <div className="itemBox1">
+                    <div className="itemBox1" onClick={()=>navigate("/itemMod",{state:{item:"Dolphin",model:"https://p3d.in/PZ7tt"}})}>
                         <img src={image1}/>
-                        <div className="itemDescription">Description</div>
+                        <div className="itemDescription">Dolphin Model</div>
                     </div>
                 </div>
             </div>
