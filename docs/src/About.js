@@ -24,17 +24,17 @@ const About = () => {
           </div>
 
           <div className="nav-circles">
-            <Link to="/" className="circle">
+            <Link to="/auroraflietz.github.io" className="circle">
               <HomeIcon className="circle-icon" />
               Home
             </Link>
 
-            <Link to="/drawings" className="circle">
+            <Link to="/auroraflietz.github.io/drawings" className="circle">
               <ArtIcon className="circle-icon" />
               Digital <br /> Art
             </Link>
 
-            <Link to="/models" className="circle">
+            <Link to="/auroraflietz.github.io/models" className="circle">
               <CadIcon className="circle-icon" />
               CAD
             </Link>

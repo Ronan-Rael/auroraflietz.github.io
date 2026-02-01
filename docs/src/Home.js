@@ -13,7 +13,7 @@ export default function Home(){
                 <div className="leftHome home-btn home-sides">
                     
                     <svg className = "clickable" width="100%" height="100%" viewBox='0 0 100 100' preserveAspectRatio='none'>
-                        <Link to={`/models`}>
+                        <Link to={`/auroraflietz.github.io/models`}>
                         <path d="M   0   0
                                 L 0  100
                                 L 100 65
@@ -34,7 +34,7 @@ export default function Home(){
                 </div>
                 <div className="rightHome home-btn home-sides">
                     <svg className = "clickable" width="100%" height="100%" viewBox='0 0 100 100' preserveAspectRatio='none'>
-                        <Link to={`/drawings`}>
+                        <Link to={`/auroraflietz.github.io/drawings`}>
                         <path
                             d="M   0   0
                                 L 0  65
@@ -54,7 +54,7 @@ export default function Home(){
                 </div>
                 <div className="bottomHome home-btn home-bottom">
                     <svg className = "clickable" width="100%" height="100%" viewBox='0 0 100 100' preserveAspectRatio='none'>
-                        <Link to={`/about`}>
+                        <Link to={`/auroraflietz.github.io/about`}>
                         <path d="M   0   100
                                 L 100  100
                                 L 100 71

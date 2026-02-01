@@ -15,19 +15,19 @@ const FloatingActionButton = () => {
     <div className="fab-container">
       <HomeIcon
         className="fab-btn fab-center"
-        onClick={() => navigate("/")}
+        onClick={() => navigate("/auroraflietz.github.io")}
       />
       <ArtIcon
         className="fab-btn fab-sliver fab-art"
-        onClick={() => navigate("/drawings")}
+        onClick={() => navigate("/auroraflietz.github.io/drawings")}
       />
       <AboutIcon
         className="fab-btn fab-sliver fab-about"
-        onClick={() => navigate("/about")}
+        onClick={() => navigate("/auroraflietz.github.io/about")}
       />
       <CadIcon
         className="fab-btn fab-sliver fab-cad"
-        onClick={() => navigate("/models")}
+        onClick={() => navigate("/auroraflietz.github.io/models")}
       />
     </div>
   );

@@ -13,27 +13,27 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom";
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/auroraflietz.github.io",
     element: <Home />
   },
   {
-    path: "/drawings",
+    path: "/auroraflietz.github.io/drawings",
     element: <Drawings/>
   },
   {
-    path: "/about",
+    path: "/auroraflietz.github.io/about",
     element: <About/>
   },
   {
-    path: "/models",
+    path: "/auroraflietz.github.io/models",
     element: <Models/>
   },
   {
-    path: "/item",
+    path: "/auroraflietz.github.io/item",
     element: <Item/>
   },
   {
-    path: "/itemMod",
+    path: "/auroraflietz.github.io/itemMod",
     element: <ItemMod/>
   }
 ]);
