@@ -1,4 +1,7 @@
-Client liked the figma idea, requested some minor changes having to do with performance (such as not loading in models immediately)
-The current product is pretty much the same as the initial figma
+Original run of contributions can be found in the following repository: https://github.com/mfeituri/Aurora-Website#
 
-to run, npm i -> npm run build -> npm run start
+This website is currently under the development of only Sorcha Rael, but was originally being developed by the following group:
+https://github.com/Ronan-Rael
+https://github.com/Nevtrality
+https://github.com/mfeituri
+https://github.com/marifeller
