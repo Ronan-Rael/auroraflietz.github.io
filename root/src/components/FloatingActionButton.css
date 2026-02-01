@@ -1,0 +1,39 @@
+.fab-container {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+  filter: drop-shadow(-4px 4px 6px midnightblue);
+}
+
+.fab-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  position: absolute;
+  transition: transform 0.2s ease;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  z-index: 5;
+  top: 0;
+  left: 0;
+}
+
+.fab-btn path,
+.fab-btn circle,
+.fab-btn rect,
+.fab-btn polygon,
+.fab-btn g {
+  pointer-events: auto;
+}
+
+.fab-btn:hover {
+  transform: scale(1.1);
+}

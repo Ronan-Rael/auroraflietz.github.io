@@ -1,0 +1,81 @@
+@font-face {
+    font-family: 'Bombard';
+    src: local('Bombard'), url("./fonts/BOMBARD_.ttf") format('truetype');
+}
+/* Ripped from Home.css */
+.content{
+    display: flex;
+    flex-flow:row wrap;
+    justify-content: start;
+    align-items:start;
+    top: 0%;
+    left: 0%;
+    width:100%;
+    min-height: 100%;
+
+    overflow: auto; /* literally only here to let the page be scrollable */
+}
+
+/* Cool top bar for the page */
+.top{
+    display:flex;
+    width: 100%;
+    height: 8%;
+}
+.topBar{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+/* Main text area before the actual clickable content */
+.text{
+    display:flex;
+    flex-flow: column wrap;
+    align-items:center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.headingText{
+    display: flex;
+    padding-top:1%;
+    padding-bottom: 1%;
+    fill: black;
+    font-family: 'Bombard';
+    font-size: 400%;
+}
+.subHeadingText{
+    display: flex;
+    top: 0%;
+    fill: rgb(80, 80, 80);
+    font-family: 'Bombard';
+    font-size: 200%;
+}
+
+#itemscrn{
+    width:50%;
+}
+
+.label-text-overlay {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 48px;
+  color: black;
+  pointer-events: none;
+}
+
+.doubleColumn{
+    width: 90%;
+    height: 50%;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+model-viewer{
+    width: 50vw;
+    height: 50vh;
+}

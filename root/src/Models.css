@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'Bombard';
+    src: local('Bombard'), url("./fonts/BOMBARD_.ttf") format('truetype');
+}
+
+/* THIS CAN BE DELETED, ITS NOT BEING USED */
+
+.moditemBox1{
+    margin:0% 0.5%;
+    background-color: rgb(134, 40, 40);
+    width:25vw;
+    height:25vw;
+}
+.moditemBox2{
+    margin: -5% 0.5%;
+    background-color: rgb(134, 40, 40);
+    width:25vw;
+    height:25vw;
+}
+
+.moditemBox1:hover{
+    scale: 1.05;
+    filter:drop-shadow(3.15px 3.15px 8.4px grey);
+}
+.moditemBox1:hover .itemDescription{
+    display:block;
+}

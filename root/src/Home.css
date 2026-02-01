@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Bombard';
+    src: local('Bombard'), url("./fonts/BOMBARD_.ttf") format('truetype');
+}
+
+.content{
+    position:fixed;
+    top: 0%;
+    left: 0%;
+    width:100%;
+    height: 100%;
+}
+
+.home-btn{
+    pointer-events: none;
+    transition: scale 0.2s;
+}
+
+.home-btn svg{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+}
+
+.clickable path{
+    pointer-events: auto;
+}
+
+.home-btn:hover{
+    scale: 1.05;
+}
+
+.leftHome {
+    position:fixed;
+    top: 0%;
+    left: 0%;
+    filter:drop-shadow(3px 3px 8px grey);
+}
+
+.leftHome:hover {
+    filter:drop-shadow(3.15px 3.15px 8.4px grey);
+}
+
+.rightHome {
+    position:fixed;
+    top: 0%;
+    right: 0%;
+    filter:drop-shadow(-3px 3px 8px grey);
+}
+
+.rightHome:hover {
+    filter:drop-shadow(-3.15px 3.15px 8.4px grey);
+}
+
+.home-sides{
+    width: -webkit-calc(50% - 16px); 
+    width: -moz-calc(50% - 16px); 
+    width: calc(50% - 16px); 
+    height: 88.62%;
+}
+
+.bottomHome{
+    position: fixed;
+    bottom: 0%;
+    width: 86.5972%;
+    height: 39.16%;
+    right: 50%;
+    translate: 50%;
+}
+
+.label-text{
+    fill: white;
+    font-family: 'Bombard';
+}
