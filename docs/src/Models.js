@@ -55,19 +55,19 @@ export default function Models(){
             <div className="items">
                 {/* Items are currently just colored boxes, will make them fancy and functional once we've got images */}
                 <div className="itemColumn">
-                    <div className="itemBox1" onClick={()=>navigate("/itemMod",{state:{type:"site",item:"White Beaked Dolphin",model:"https://p3d.in/PZ7tt"}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/auroraflietz.github.io/itemMod",{state:{type:"site",item:"White Beaked Dolphin",model:"https://p3d.in/PZ7tt"}})}>
                         <img src={image1}/>
                         <div className="itemDescription">White Beaked Dolphin</div>
                     </div>
                 </div>
                 <div className="itemColumnMid" >
-                    <div className="itemBox1" onClick={()=>navigate("/itemMod",{state:{type:"file",item:"DX3 Castle",model:model2}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/auroraflietz.github.io/itemMod",{state:{type:"file",item:"DX3 Castle",model:model2}})}>
                         <img src={image2}/>
                         <div className="itemDescription">DX3 Castle</div>
                     </div>
                 </div>
                 <div className="itemColumn">
-                    <div className="itemBox1" onClick={()=>navigate("/itemMod",{state:{type:"file",item:"Dnd Traveling Cart",model:model3}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/auroraflietz.github.io/itemMod",{state:{type:"file",item:"Dnd Traveling Cart",model:model3}})}>
                         <img src={image3}/>
                         <div className="itemDescription">Dnd Traveling Cart</div>
                     </div>

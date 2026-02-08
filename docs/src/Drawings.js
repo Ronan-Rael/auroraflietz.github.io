@@ -109,55 +109,55 @@ export default function Drawings() {
             <div className="items">
                 {/* Items are currently just colored boxes, will make them fancy and functional once we've got images */}
                 <div className="itemColumn">
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Queen of Spades Design",desc:"part of my custom cards project",image:image1}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/auroraflietz.github.io/item",{state:{item:"Queen of Spades Design",desc:"part of my custom cards project",image:image1}})}>
                         <img src={image1}/>
                         <div className="itemDescription">Queen of Spades Design</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Augment your Reality",desc:"",image:image4}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/auroraflietz.github.io/item",{state:{item:"Augment your Reality",desc:"",image:image4}})}>
                         <img src={image4}/>
                         <div className="itemDescription">Augment your Reality</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Wide Frog",desc:"One of my frog fight TCG card art commisions",image:image13}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/auroraflietz.github.io/item",{state:{item:"Wide Frog",desc:"One of my frog fight TCG card art commisions",image:image13}})}>
                         <img src={image13}/>
                         <div className="itemDescription">Wide Frog</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Sun Frog",desc:"One of my frog fight TCG card art commissions",image:image10}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/auroraflietz.github.io/item",{state:{item:"Sun Frog",desc:"One of my frog fight TCG card art commissions",image:image10}})}>
                         <img src={image10}/>
                         <div className="itemDescription">Sun Frog</div>
                     </div>
                 </div>
                 <div className="itemColumnMid" >
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Jack of Clubs Design",desc:"part of my custom cards project",image:image2}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/auroraflietz.github.io/item",{state:{item:"Jack of Clubs Design",desc:"part of my custom cards project",image:image2}})}>
                         <img src={image2}/>
                         <div className="itemDescription">Jack of Clubs Design</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Clumsy Frog",desc:"One of my frog fight TCG card art commisions",image:image14}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/auroraflietz.github.io/item",{state:{item:"Clumsy Frog",desc:"One of my frog fight TCG card art commisions",image:image14}})}>
                         <img src={image14}/>
                         <div className="itemDescription">Clumsy Frog</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Null Frog",desc:"One of my frog fight TCG card art commissions",image:image8}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/auroraflietz.github.io/item",{state:{item:"Null Frog",desc:"One of my frog fight TCG card art commissions",image:image8}})}>
                         <img src={image8}/>
                         <div className="itemDescription">Null Frog</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Moon Frog",desc:"One of my frog fight TCG card art commissions",image:image11}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/auroraflietz.github.io/item",{state:{item:"Moon Frog",desc:"One of my frog fight TCG card art commissions",image:image11}})}>
                         <img src={image11}/>
                         <div className="itemDescription">Moon Frog</div>
                     </div>
                 </div>
                 <div className="itemColumn">
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Ace of Diamonds Design",desc:"part of my custom cards project",image:image3}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/auroraflietz.github.io/item",{state:{item:"Ace of Diamonds Design",desc:"part of my custom cards project",image:image3}})}>
                         <img src={image3}/>
                         <div className="itemDescription">Ace of Diamonds Design</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Coffee Frog",desc:"One of my forg fight TCG card art commissions",image:image15}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/auroraflietz.github.io/item",{state:{item:"Coffee Frog",desc:"One of my forg fight TCG card art commissions",image:image15}})}>
                         <img src={image15}/>
                         <div className="itemDescription">Coffee Frog</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Eldritch Frog",desc:"One of my frog fight TCG card art commissions",image:image9}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/auroraflietz.github.io/item",{state:{item:"Eldritch Frog",desc:"One of my frog fight TCG card art commissions",image:image9}})}>
                         <img src={image9}/>
                         <div className="itemDescription">Eldritch Frog</div>
                     </div>
-                    <div className="itemBox1" onClick={()=>navigate("/item",{state:{item:"Rainbow Frog",desc:"One of my frog fight TCG card art commissions",image:image12}})}>
+                    <div className="itemBox1" onClick={()=>navigate("/auroraflietz.github.io/item",{state:{item:"Rainbow Frog",desc:"One of my frog fight TCG card art commissions",image:image12}})}>
                         <img src={image12}/>
                         <div className="itemDescription">Rainbow Frog</div>
                     </div>
